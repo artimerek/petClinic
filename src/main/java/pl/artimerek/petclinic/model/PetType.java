@@ -1,5 +1,7 @@
 package pl.artimerek.petclinic.model;
 
+// closing
+
 public class PetType {
 
     private String name;

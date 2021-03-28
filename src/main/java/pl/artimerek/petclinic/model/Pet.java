@@ -2,6 +2,9 @@ package pl.artimerek.petclinic.model;
 
 import java.time.LocalDate;
 
+
+// closing
+
 public class Pet {
 
     private PetType petType;

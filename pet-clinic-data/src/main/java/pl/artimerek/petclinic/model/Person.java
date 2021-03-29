@@ -2,7 +2,7 @@ package pl.artimerek.petclinic.model;
 
 // closing
 
-public class Person {
+public class Person extends BaseEntity{
 
     private String firstName;
     private String lastName;

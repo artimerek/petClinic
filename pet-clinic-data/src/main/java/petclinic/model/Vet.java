@@ -1,4 +1,4 @@
-package pl.artimerek.petclinic.model;
+package petclinic.model;
 
 // closing
 

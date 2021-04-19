@@ -2,10 +2,11 @@ package pl.artimerek.petclinic.services.map;
 
 import pl.artimerek.petclinic.model.Vet;
 import pl.artimerek.petclinic.services.CrudService;
+import pl.artimerek.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetMapService extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
@@ -32,4 +33,6 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements Crud
         super.deleteById(id);
 
     }
+
+
 }

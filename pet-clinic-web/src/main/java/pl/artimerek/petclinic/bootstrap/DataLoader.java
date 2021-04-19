@@ -6,8 +6,6 @@ import pl.artimerek.petclinic.model.Owner;
 import pl.artimerek.petclinic.model.Vet;
 import pl.artimerek.petclinic.services.OwnerService;
 import pl.artimerek.petclinic.services.VetService;
-import pl.artimerek.petclinic.services.map.OwnerMapService;
-import pl.artimerek.petclinic.services.map.VetMapService;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -16,10 +14,9 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
 
 
-
-    public DataLoader() {
-        ownerService = new OwnerMapService();
-        vetService = new VetMapService();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
@@ -48,7 +45,7 @@ public class DataLoader implements CommandLineRunner {
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setId(1L);
+        vet2.setId(2L);
         vet2.setFirstName("Dr. Maciej");
         vet2.setLastName("Koci");
 

@@ -1,30 +1,31 @@
 package pl.artimerek.petclinic.services.map;
 
 import org.springframework.stereotype.Service;
-import pl.artimerek.petclinic.model.Pet;
-import pl.artimerek.petclinic.services.PetService;
+import pl.artimerek.petclinic.model.Speciality;
+import pl.artimerek.petclinic.services.SpecialtiesService;
 
 import java.util.Set;
 
 @Service
-public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
+public class SpecialityMapService extends AbstractMapService<Speciality,Long> implements SpecialtiesService {
+
     @Override
-    public Set<Pet> findAll() {
+    public Set<Speciality> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Pet findById(Long id) {
+    public Speciality findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Pet save(Pet object) {
+    public Speciality save(Speciality object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Pet object) {
+    public void delete(Speciality object) {
         super.delete(object);
     }
 

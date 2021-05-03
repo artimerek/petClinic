@@ -1,8 +1,6 @@
 package pl.artimerek.petclinic.services.map;
 
 import org.springframework.stereotype.Service;
-import pl.artimerek.petclinic.model.Owner;
-import pl.artimerek.petclinic.model.Pet;
 import pl.artimerek.petclinic.model.PetType;
 import pl.artimerek.petclinic.services.PetTypeService;
 

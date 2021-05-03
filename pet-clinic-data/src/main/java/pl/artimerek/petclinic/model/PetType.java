@@ -4,6 +4,13 @@ package pl.artimerek.petclinic.model;
 
 public class PetType extends BaseEntity{
 
+    public PetType() {
+    }
+
+    public PetType(String name) {
+        this.name = name;
+    }
+
     private String name;
 
     public String getName() {
